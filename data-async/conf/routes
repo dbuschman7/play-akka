@@ -7,3 +7,7 @@ GET     /                           controllers.Application.index
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# Data Pipline 
+GET		/pipeline/sync				me.lightspeed7.data.async.AysncController.sync
+GET		/pipeline/async				me.lightspeed7.data.async.AysncController.async
